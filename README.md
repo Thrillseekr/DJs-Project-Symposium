@@ -1,2 +1,2 @@
 # DJs-Project-Symposium
-This repository includes the Porject build on different Domains
+This repository includes the Project build on different Domains
