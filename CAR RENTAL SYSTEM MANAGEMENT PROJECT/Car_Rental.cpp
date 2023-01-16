@@ -34,6 +34,7 @@ public:
             cin >> Password;
 
             ifstream read("G:/COLLEGE/CODING/C++/C++ PROGRAMMING/PROJECTS/CAR RENTAL SYSTEM MANAGEMENT PROJECT/REGISTRATION DETAILS/" + Id + ".txt");
+            /* Add the path of your file where you stored/saved your credentials*/ 
             read >> id;
             read >> ps;
 
@@ -62,6 +63,7 @@ public:
             cin >> Password;
 
             ofstream write("G:/COLLEGE/CODING/C++/C++ PROGRAMMING/PROJECTS/CAR RENTAL SYSTEM MANAGEMENT PROJECT/REGISTRATION DETAILS/" + Id + ".txt");
+            /* Add the path of your file in which you have to store/save your credentials*/ 
             write << Id << endl;
             write << Password << endl;
 
@@ -82,8 +84,10 @@ public:
         cin >> ad_Car_name;
 
         ofstream dt_write("G:/COLLEGE/CODING/C++/C++ PROGRAMMING/PROJECTS/CAR RENTAL SYSTEM MANAGEMENT PROJECT/CAR DETAILS/ " + ad_Car_name + ".txt");
-
+        /* Add the path of your file in which you have to store/save Car Details*/  
+        
         ofstream c_write("G:/COLLEGE/CODING/C++/C++ PROGRAMMING/PROJECTS/CAR RENTAL SYSTEM MANAGEMENT PROJECT/CAR DETAILS/car-list.txt", ios::app);
+        /* Add the path of your file in which you have to add car details*/ 
         c_write << "\n"
                 << ad_Car_name; // c_write dose'nt read spaces, so first space is not read by program
 
